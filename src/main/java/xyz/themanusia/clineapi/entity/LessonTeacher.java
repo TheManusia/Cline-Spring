@@ -21,14 +21,11 @@ public class LessonTeacher {
     private int id;
 
     @OneToOne
-    @Column(name = "lesson_id")
     private Lesson lesson;
 
     @OneToOne
-    @Column(name = "teacher_id")
     private Teacher teacher;
 
     @OneToOne
-    @Column(name = "class_id")
     private Classes classes;
 }

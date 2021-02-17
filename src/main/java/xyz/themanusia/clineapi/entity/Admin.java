@@ -21,6 +21,5 @@ public class Admin {
     private int id;
 
     @OneToOne
-    @Column(name = "user_id")
-    private User userId;
+    private User user;
 }

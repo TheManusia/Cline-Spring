@@ -21,7 +21,6 @@ public class Schedule {
     private int id;
 
     @OneToOne
-    @Column(name = "lesson_id")
     private LessonTeacher lesson;
 
     @Column(name = "number")

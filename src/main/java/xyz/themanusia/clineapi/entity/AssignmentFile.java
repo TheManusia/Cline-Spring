@@ -21,10 +21,8 @@ public class AssignmentFile {
     private int id;
 
     @OneToOne
-    @Column(name = "assignment_id")
     private Assignment assignment;
     
     @OneToOne
-    @Column(name = "file_id")
     private File file;
 }

@@ -23,11 +23,9 @@ public class Classes {
     @Column(name = "alias")
     private String alias;
 
-    @Column(name = "department")
     @OneToOne
     private Department department;
 
-    @Column(name = "teacher")
     @OneToOne
     private Teacher teacher;
 }

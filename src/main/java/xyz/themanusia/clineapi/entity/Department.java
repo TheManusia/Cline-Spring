@@ -26,7 +26,6 @@ public class Department {
     @Column(name = "alias")
     private String alias;
 
-    @Column(name = "teacher")
     @OneToOne
     private Teacher teacher;
 }

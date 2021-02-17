@@ -27,6 +27,5 @@ public class Assignment {
     private String description;
 
     @OneToOne
-    @Column(name = "lesson_id")
-    private LessonTeacher lessonId;
+    private LessonTeacher lesson;
 }

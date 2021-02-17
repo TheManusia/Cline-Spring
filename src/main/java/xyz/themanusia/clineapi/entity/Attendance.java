@@ -22,7 +22,6 @@ public class Attendance {
     private int id;
 
     @OneToOne
-    @Column(name = "student_id")
     private Student student;
 
     @Column(name = "time")

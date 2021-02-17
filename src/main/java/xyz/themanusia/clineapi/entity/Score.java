@@ -21,14 +21,11 @@ public class Score {
     private int id;
 
     @OneToOne
-    @Column(name = "student_id")
     private Student student;
 
     @OneToOne
-    @Column(name = "lesson_id")
     private Lesson lesson;
 
     @OneToOne
-    @Column(name = "teacher_id")
     private Teacher teacher;
 }

@@ -26,7 +26,6 @@ public class Status {
     @Column(name = "status")
     private int status;
 
-    @Column(name = "editedby")
     @OneToOne
     private Admin admin;
 }

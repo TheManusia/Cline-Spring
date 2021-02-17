@@ -21,10 +21,8 @@ public class Student {
     private int id;
 
     @OneToOne
-    @Column(name = "user_id")
     private User user;
 
     @OneToOne
-    @Column(name = "class_id")
     private Classes classes;
 }

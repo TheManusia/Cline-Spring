@@ -32,7 +32,6 @@ public class Announcement {
     @Column(name = "receiver")
     private int receiver;
 
-    @Column(name = "uploader")
     @OneToOne
     private Admin admin;
 }

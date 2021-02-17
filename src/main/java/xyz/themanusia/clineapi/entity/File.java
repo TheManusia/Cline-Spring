@@ -24,6 +24,5 @@ public class File {
     private String name;
 
     @OneToOne
-    @Column(name = "uploader")
     private User uploader;
 }

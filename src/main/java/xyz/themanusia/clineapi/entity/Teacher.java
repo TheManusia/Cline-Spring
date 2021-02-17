@@ -21,8 +21,7 @@ public class Teacher {
     private int id;
 
     @OneToOne
-    @Column(name = "user_id")
-    private User userId;
+    private User user;
 
     @Column(name = "alias")
     private String alias;

@@ -21,10 +21,8 @@ public class FilePermission {
     private int id;
 
     @OneToOne
-    @Column(name = "file_id")
     private File file;
 
     @OneToOne
-    @Column(name = "user_id")
     private User user;
 }
