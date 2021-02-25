@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import xyz.themanusia.clineapi.entity.DeletedUser;
-import xyz.themanusia.clineapi.entity.User;
 import xyz.themanusia.clineapi.response.Response;
 
 import java.sql.Timestamp;
@@ -125,7 +123,7 @@ public class UserController {
         return new Response(Response.OK, "User deleted successfully", null);
     }
 
-    @RequestMapping(path = "/backup")
+    @RequestMapping(path = "/restore")
     public @ResponseBody
     Response backup(@RequestParam(value = "id") String id) {
         DeletedUser d = deleteUserRepository.getDeletedUserById(Integer.parseInt(id));

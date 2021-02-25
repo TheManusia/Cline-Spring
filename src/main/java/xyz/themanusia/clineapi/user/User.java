@@ -1,4 +1,4 @@
-package xyz.themanusia.clineapi.entity;
+package xyz.themanusia.clineapi.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;

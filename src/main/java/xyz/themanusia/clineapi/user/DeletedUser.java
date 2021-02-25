@@ -1,4 +1,4 @@
-package xyz.themanusia.clineapi.entity;
+package xyz.themanusia.clineapi.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
