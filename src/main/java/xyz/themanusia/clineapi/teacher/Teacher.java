@@ -1,4 +1,4 @@
-package xyz.themanusia.clineapi.entity;
+package xyz.themanusia.clineapi.teacher;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -21,9 +21,10 @@ public class Teacher {
     @Column(name = "id")
     private int id;
 
+    @Column(name = "alias")
+    private String alias;
+
     @OneToOne
     private User user;
 
-    @Column(name = "alias")
-    private String alias;
 }
