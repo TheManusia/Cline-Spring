@@ -21,6 +21,12 @@ public class Score {
     @Column(name = "id")
     private int id;
 
+    @Column(name = "name")
+    private String name;
+
+    @Column(name = "score")
+    private int score;
+    
     @OneToOne
     private Student student;
 
