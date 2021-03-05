@@ -1,10 +1,10 @@
-package xyz.themanusia.clineapi.entity;
+package xyz.themanusia.clineapi.classes;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import xyz.themanusia.clineapi.Department.Department;
+import xyz.themanusia.clineapi.department.Department;
 import xyz.themanusia.clineapi.teacher.Teacher;
 
 import javax.persistence.*;
