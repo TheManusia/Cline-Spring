@@ -1,4 +1,4 @@
-package xyz.themanusia.clineapi.Department;
+package xyz.themanusia.clineapi.department;
 
 import org.springframework.data.repository.CrudRepository;
 import xyz.themanusia.clineapi.teacher.Teacher;

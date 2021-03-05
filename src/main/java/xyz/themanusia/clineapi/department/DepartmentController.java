@@ -1,4 +1,4 @@
-package xyz.themanusia.clineapi.Department;
+package xyz.themanusia.clineapi.department;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

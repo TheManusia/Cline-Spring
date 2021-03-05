@@ -1,4 +1,4 @@
-package xyz.themanusia.clineapi.Department;
+package xyz.themanusia.clineapi.department;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
