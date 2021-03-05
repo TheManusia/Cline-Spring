@@ -85,10 +85,10 @@ public class DepartmentController {
         }
         if (teacherId != null) {
             Teacher t = teacherRepository.getTeacherById(Integer.parseInt(teacherId));
-            if (departmentRepository.existsDepartmentByTeacher(t))
-                return new Response(Response.BAD_REQUEST, "Teacher already in use", null);
             if (t == null)
                 return new Response(Response.BAD_REQUEST, "Teacher not found", null);
+            if (departmentRepository.existsDepartmentByTeacher(t))
+                return new Response(Response.BAD_REQUEST, "Teacher already in use", null);
             d.setTeacher(t);
         }
         departmentRepository.save(d);
