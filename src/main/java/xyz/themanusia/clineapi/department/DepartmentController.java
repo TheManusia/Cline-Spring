@@ -73,12 +73,20 @@ public class DepartmentController {
         Department d = departmentRepository.getDepartmentById(Integer.parseInt(id));
         if (d == null)
             return new Response(Response.BAD_REQUEST, "Department not found", null);
-        if (name != null)
+        if (name != null) {
+            if (departmentRepository.existsByName(name))
+                return new Response(Response.BAD_REQUEST, "Name already in use", null);
             d.setName(name);
-        if (alias != null)
+        }
+        if (alias != null) {
+            if (departmentRepository.existsByAlias(alias))
+                return new Response(Response.BAD_REQUEST, "Alias already in use", null);
             d.setAlias(alias);
+        }
         if (teacherId != null) {
             Teacher t = teacherRepository.getTeacherById(Integer.parseInt(teacherId));
+            if (departmentRepository.existsDepartmentByTeacher(t))
+                return new Response(Response.BAD_REQUEST, "Teacher already in use", null);
             if (t == null)
                 return new Response(Response.BAD_REQUEST, "Teacher not found", null);
             d.setTeacher(t);
