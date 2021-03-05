@@ -61,7 +61,7 @@ public class DepartmentController {
         d.setName(name);
         d.setTeacher(t);
         departmentRepository.save(d);
-        return new Response(Response.OK, "Department successfully added", null);
+        return new Response(Response.OK, "Department successfully added", departmentRepository.findTopByOrderByIdDesc());
     }
 
     @RequestMapping(path = "/edit")
